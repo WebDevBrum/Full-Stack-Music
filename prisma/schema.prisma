@@ -46,7 +46,6 @@ model Playlist {
   updateAt DateTime @updatedAt
   name String
   songs Song[] 
-  songId Int
   user User @relation(fields: [userId], references: [id])
   userId Int
 }
